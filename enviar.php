@@ -18,5 +18,5 @@ $asunto = 'Asunto del mail recibido';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location: https://silvia-987-7.000webhostapp.com");
+header("Location: https://silviarq.github.io/sample1-website/");
 ?>
