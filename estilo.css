@@ -1,0 +1,170 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: "flaming";
+	src:url("fuentes/flaming.otf");
+}
+@font-face{
+	font-family: "odin";
+	src:url("fuentes/odinrounded-bold.otf");
+}
+@font-face{
+	font-family: "brad";
+	src:url("fuentes/brad.ttf");
+}
+
+body{
+	background-color: white;
+	width: 1200px;
+	color: red;
+	margin: auto;
+}
+
+header{
+	background-image: url("imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+header img{
+	margin-left: 340px;
+}
+
+nav{
+	margin-top: 10px;
+	background-color: rgba(254, 206, 224, 0.9);
+	height: 50px;
+}
+nav ol{
+	list-style-type: none;
+}
+nav a{
+	float: left;
+	font-family: odin;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none; /*Le quita las lineas de vinculo*/
+	margin-top: 5px;
+	margin-left: 130px;
+	color: white;
+	background-color: rgba(254, 206, 224, 0.2);
+	width: 135px;
+}
+nav a:hover{
+	text-align: center;
+	background-color: rgba(253, 154, 253, 0.15);
+	width: 135px;
+	border-radius: 10px 10px;
+	box-shadow: 3px 3px 5px rgb(243, 186, 222);
+}
+
+section{
+	background-color: white;
+	height: 800px;
+	padding: 50px;
+}
+section h1{
+	font-family: flaming;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(254, 206, 224);
+}
+section h2{
+	font-family: flaming;
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(130, 233, 201);
+}
+section h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+}
+section a{
+	text-decoration: none; 
+	color: gray;
+}
+.galeria img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.galeria img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.somos img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.somos img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+footer{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 650px;
+	padding: 50px;
+}
+footer h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: justify;
+	color: gray;
+}
+footer p{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: justify;
+	color: gray;
+}
+
+aside{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 190px;
+	padding-top: 50px;
+	padding-left: 450px;
+}
+#redes{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 600px;
+	height: 300px;
+	float: left;
+	padding: 10px;
+}
+#redes img{
+	margin: 0px 15px;
+}
+#twitter{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin-left: 40px;
+}
+#mensaje{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 500px;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
