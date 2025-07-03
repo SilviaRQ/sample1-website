@@ -17,82 +17,210 @@
 	src:url("fuentes/brad.ttf");
 }
 
+/* Keyframe que permite hacer desvanecimiento. Lo llamas en cualquier lado usando aparecer*/
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Keyframe que permite deslizamientos, puedo aplicarlo a imagenes*/
+@keyframes deslizarDesdeDerecha {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.imagen-animada {
+  /*width: 300px;  o el tamaño que necesites */
+  left: 800px;
+  animation: deslizarDesdeDerecha 2s ease-out forwards;
+  opacity: 0; /* invisible al principio */
+}
+
 body{
 	background-color: white;
-	width: 1200px;
-	color: red;
 	margin: auto;
 }
 
-header{
-	background-image: url("imagenes/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 300px;
-}
-header img{
-	margin-left: 340px;
-}
-
-nav{
-	margin-top: 10px;
-	background-color: rgba(254, 206, 224, 0.9);
-	height: 50px;
-}
-nav ol{
-	list-style-type: none;
-}
-nav a{
-	float: left;
-	font-family: odin;
-	font-size: 2em;
-	text-align: center;
-	text-decoration: none; /*Le quita las lineas de vinculo*/
-	margin-top: 5px;
-	margin-left: 130px;
-	color: white;
-	background-color: rgba(254, 206, 224, 0.2);
-	width: 135px;
-}
-nav a:hover{
-	text-align: center;
-	background-color: rgba(253, 154, 253, 0.15);
-	width: 135px;
-	border-radius: 10px 10px;
-	box-shadow: 3px 3px 5px rgb(243, 186, 222);
-}
 
 section{
 	background-color: white;
-	height: 800px;
 	padding: 50px;
 }
 section h1{
 	font-family: flaming;
-	font-size: 5em;
+	font-size: 10em;
 	font-weight: lighter;
 	text-align: center;
-	color: rgb(254, 206, 224);
+	color: rgb(186,55,139);
+	animation: aparecer 1.5s ease-out;
 }
 section h2{
-	font-family: flaming;
-	font-size: 3em;
+	font-family: brad;
+	font-size: 4em;
 	font-weight: lighter;
 	text-align: center;
-	color: rgb(130, 233, 201);
+	color:rgb(56,188,149);
 }
 section h3{
+	font-family: flaming;
+	font-size: 1.5cm;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+	animation: aparecer 1.5s ease-out;
+}
+
+section h4{
+	font-family: brad;
+	font-size: 2em;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+	animation: aparecer 1.5s ease-out;
+}
+
+
+/*Carousel hace que las imagenes se desplacen*/
+.carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+/*Fin Carousel*/
+
+.somos img {
+	display:block;
+	margin:auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;  
+}
+.somos img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.contacto{
+	background-color: rgba(251, 254, 206, 0.9);
+	/*height: 650px;*/
+	padding: 50px;
+}
+
+
+#redes{
+	margin: 20px;
+}
+
+#redes p{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	/*text-align: justify;*/
+	color: gray;
+}
+
+#redes h3{
 	font-family: brad;
 	font-size: 1.5em;
 	font-weight: lighter;
 	text-align: center;
 	color: gray;
 }
-section a{
-	text-decoration: none; 
-	color: gray;
+
+#twitter{
+	/*background-color: rgba(251, 254, 206, 0.9);
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin-left: 40px;*/
+	margin: 40px;
 }
+/*#mensaje{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 500px;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+/* COSAS QUE FUI QUITANDO PARA PROBAR ESTA PAGINA*/
+
+/*header{
+	display: flex;
+	justify-content:space-around;
+	background-image: url("imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+
+header img{
+	display:block;
+	margin:auto;
+}
+
+.row{
+	text-align:center;
+	color:white;
+}
+
+.row a{
+	font-family: odin;
+	font-size: 2em;
+	/*text-align: center;*/
+	/*text-decoration: none;*/ /*Le quita las lineas de vinculo*/
+	/*color: white;*/
+/*}
+
+.row a:hover{
+	/*text-align: center;
+	background-color: rgba(253, 154, 253, 0.15);
+	width: 135px;
+	border-radius: 10px 10px;
+	box-shadow: 3px 3px 5px rgb(243, 186, 222);*/
+	/*color: white;
+}*/
+
+/*section a{
+	text-decoration: none; 
+	color: red;
+}
+	
 .galeria img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -105,66 +233,5 @@ section a{
 .galeria img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
-.somos img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin-left: 300px;
-    margin-top: 20px;
-    width: 500px;
-    
-}
-.somos img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-footer{
-	background-color: rgba(251, 254, 206, 0.9);
-	height: 650px;
-	padding: 50px;
-}
-footer h3{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	text-align: justify;
-	color: gray;
-}
-footer p{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	text-align: justify;
-	color: gray;
-}
 
-aside{
-	background-color: rgba(251, 254, 206, 0.9);
-	height: 190px;
-	padding-top: 50px;
-	padding-left: 450px;
-}
-#redes{
-	background-color: rgba(251, 254, 206, 0.9);
-	width: 600px;
-	height: 300px;
-	float: left;
-	padding: 10px;
-}
-#redes img{
-	margin: 0px 15px;
-}
-#twitter{
-	background-color: rgba(251, 254, 206, 0.9);
-	width: 400px;
-	height: 500px;
-	float: left;
-	margin-left: 40px;
-}
-#mensaje{
-	background-color: rgba(251, 254, 206, 0.9);
-	width: 500px;
-	height: 150px;
-	float: left;
-	margin-top: 20px;
-	padding-left: 20px;
-}
+*/
