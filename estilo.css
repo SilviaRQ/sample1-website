@@ -65,17 +65,11 @@ body{
 }*/
 section h1{
 	font-family: flaming;
-	/*font-size: 10em;
-	font-weight: lighter;
-	text-align: center;*/
 	color: rgb(186,55,139);
 	animation: aparecer 1.5s ease-out;
 }
 section h2{
 	font-family: brad;
-	/*font-size: 4em;
-	font-weight: lighter;
-	text-align: center;*/
 	color:rgb(56,188,149);
 	animation: aparecer 1.5s ease-out;
 }
@@ -83,7 +77,6 @@ section h3{
 	font-family: flaming;
 	font-size: 3em;
 	font-weight: lighter;
-	/*text-align: center;*/
 	color: gray;
 	animation: aparecer 1.5s ease-out;
 }
@@ -117,102 +110,3 @@ section h4{
   border-radius: 5px;
 }
 /*Fin Carousel*/
-
-.somos img {
-	display:block;
-	margin:auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 500px;  
-}
-.somos img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.contacto{
-	background-color: rgba(251, 254, 206, 0.9);
-	/*height: 650px;*/
-	padding: 50px;
-}
-
-
-#redes{
-	margin: 20px;
-}
-
-#redes p{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	/*text-align: justify;*/
-	color: gray;
-}
-
-#redes h3{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	text-align: center;
-	color: gray;
-}
-
-
-/* COSAS QUE FUI QUITANDO PARA PROBAR ESTA PAGINA*/
-
-/*header{
-	display: flex;
-	justify-content:space-around;
-	background-image: url("imagenes/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 300px;
-}
-
-header img{
-	display:block;
-	margin:auto;
-}
-
-.row{
-	text-align:center;
-	color:white;
-}
-
-.row a{
-	font-family: odin;
-	font-size: 2em;
-	/*text-align: center;*/
-	/*text-decoration: none;*/ /*Le quita las lineas de vinculo*/
-	/*color: white;*/
-/*}
-
-.row a:hover{
-	/*text-align: center;
-	background-color: rgba(253, 154, 253, 0.15);
-	width: 135px;
-	border-radius: 10px 10px;
-	box-shadow: 3px 3px 5px rgb(243, 186, 222);*/
-	/*color: white;
-}*/
-
-/*section a{
-	text-decoration: none; 
-	color: red;
-}
-	
-.galeria img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 25px;
-    width: 300px;
-    height: 300px;
-}
-
-.galeria img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-*/
