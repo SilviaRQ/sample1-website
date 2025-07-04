@@ -81,7 +81,7 @@ section h2{
 }
 section h3{
 	font-family: flaming;
-	font-size: 1.5cm;
+	font-size: 3em;
 	font-weight: lighter;
 	/*text-align: center;*/
 	color: gray;
@@ -90,7 +90,7 @@ section h3{
 
 section h4{
 	font-family: brad;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: lighter;
 	text-align: center;
 	color: gray;
