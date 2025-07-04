@@ -18,7 +18,7 @@
 
     <title>Te lo regalo yo | Inicio</title>
 </head>
-<body>
+<body id="top">
 
 <!-- BOTONES DE NAVEGADOR -->	
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,18 +44,18 @@
 		<br>
 		<h2>Somos un emprendimiento especializados en crear recuerdos dulces y personalizados.</h2>
 		<br>
+</section>
 
-
-		<section class="d-flex justify-content-center my-5">
+<section class="d-flex justify-content-center my-5">
   			<div class="p-4 text-center" style="max-width: 700px;">
     		<h4 class="fs-4 fst-italic text-muted m-0">
       Creamos experiencias para nuestros clientes, generando un impacto mediante ideas creativas e innovadoras en forma de propuestas materializadas en stands, ambientación, merchandising y souvenirs. <br>
       Buscamos generar experiencias únicas y diferentes para cada cliente.
 			</h4>
   			</div>
-		</section>
+</section>
 
-	<section id="servicios">
+	<section id="servicios" class="text-center mx-5">
 		Conocé los distintos servicios que tenemos para ofrecerte:
 		<h3>Pedidos personalizados de:</h3>
 		<br>
@@ -122,21 +122,16 @@
 </section>
 
 
+<!-- Texto centrado y margin top de 5 -->
+<aside id="contacto" class="text-center mt-5">
 
 Tenés un evento en mente?
 <br> 
 Contactanos!
 <br>
 <button type="button" class="btn btn-success">Reservar cita</button>
-
-	<div class="somos">
-		<a href="imagenes/somos.jpg"><img src="imagenes/somos.jpg" alt="1"></a>
-	</div>
-</section>
-
-<!-- Texto centrado y margin top de 5 -->
-<aside id="contacto" class="text-center mt-5">
-  <h4>Conectate con nosotros</h4>
+<br>
+  <h4>Seguinos en nuestras redes</h4>
   <div class="d-flex justify-content-center gap-4 fs-3 mt-3">
     <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
@@ -149,7 +144,19 @@ Contactanos!
 	<p class="mb-0">&copy; Copyright © 2025 All rights reserved</p>
 </footer>
 
+
+<a href="#top" class="btn btn-secondary position-fixed bottom-0 end-0 m-4" style="z-index: 1000;">
+  ↑ Arriba
+</a>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
+
+<!-- 
+	<div class="somos">
+		<a href="imagenes/somos.jpg"><img src="imagenes/somos.jpg" alt="1"></a>
+	</div>
+-->
