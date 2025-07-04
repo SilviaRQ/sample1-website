@@ -73,6 +73,7 @@ section h2{
 	font-weight: lighter;
 	text-align: center;
 	color:rgb(56,188,149);
+	animation: aparecer 1.5s ease-out;
 }
 section h3{
 	font-family: flaming;
