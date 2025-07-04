@@ -65,17 +65,17 @@ body{
 }*/
 section h1{
 	font-family: flaming;
-	font-size: 10em;
+	/*font-size: 10em;
 	font-weight: lighter;
-	/*text-align: center;*/
+	text-align: center;*/
 	color: rgb(186,55,139);
 	animation: aparecer 1.5s ease-out;
 }
 section h2{
 	font-family: brad;
-	font-size: 4em;
+	/*font-size: 4em;
 	font-weight: lighter;
-	/*text-align: center;*/
+	text-align: center;*/
 	color:rgb(56,188,149);
 	animation: aparecer 1.5s ease-out;
 }
