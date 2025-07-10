@@ -53,6 +53,10 @@ html {
   opacity: 0; /* invisible al principio */
 }
 
+#servicios{
+  scroll-margin-top: 130px;
+}
+
 body{
 	background-color: white;
 	margin: auto;
@@ -66,19 +70,19 @@ body{
 section h1{
 	font-family: flaming;
 	color: rgb(186,55,139);
-	animation: aparecer 1.5s ease-out;
+	/*animation: aparecer 1.5s ease-out;*/
 }
 section h2{
 	font-family: brad;
 	color:rgb(56,188,149);
-	animation: aparecer 1.5s ease-out;
+	/*animation: aparecer 1.5s ease-out;*/
 }
 section h3{
 	font-family: flaming;
 	font-size: 3em;
 	font-weight: lighter;
 	color: gray;
-	animation: aparecer 1.5s ease-out;
+	/*animation: aparecer 1.5s ease-out;*/
 }
 
 section h4{
@@ -87,7 +91,7 @@ section h4{
 	font-weight: lighter;
 	text-align: center;
 	color: gray;
-	animation: aparecer 1.5s ease-out;
+	/*animation: aparecer 1.5s ease-out;*/
 }
 
 
